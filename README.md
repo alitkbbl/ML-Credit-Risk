@@ -5,9 +5,9 @@ benchmarks classical and boosted-ensemble models on real credit-risk
 decisioning, from raw applicant data through a production-style model
 comparison and robustness audit.
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Pipelines-F7931E?logo=scikitlearn&logoColor=white)
+![Pipeline](https://img.shields.io/badge/Pipeline-End--to--End%20ETL-teal)
 ![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-00599C?logo=xgboost&logoColor=white)
-![LightGBM](https://img.shields.io/badge/LightGBM-Fast%20Ensemble-FFB13B?logo=lightning&logoColor=black)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Pipelines-F7931E?logo=scikitlearn&logoColor=white)
 ![imbalanced-learn](https://img.shields.io/badge/imbalanced--learn-Class%20Imbalance-9cf)
 
 
@@ -75,7 +75,7 @@ a held-out test set:
 |---|---|---|---|
 | 🏆 **XGBoost** | **0.9777** | **0.9816** | **0.9902** |
 | Random Forest | 0.9683 | 0.9755 | 0.9881 |
-| Decision Tree | 0.9695 | 0.9748 | 0.972 |
+| Decision Tree | 0.9695 | 0.9748 | 0.9721 |
 | SVM (RBF) | 0.9414 | 0.9512 | 0.9663 |
 | KNN | 0.9215 | 0.9327 | 0.9768 |
 | Logistic Regression | 0.9203 | 0.9324 | 0.9650 |
@@ -111,10 +111,6 @@ a held-out test set:
 - **Primary risk driver:** `cibil_score`, overwhelmingly — a strength for
   accuracy, but a fragility for real-world robustness (see the notebook's
   drop-feature audit).
-- **Production readiness:** this pipeline is a strong proof of concept, not
-  an autonomous decisioning system. Interpretability, fairness auditing, and
-  stress-testing against noisy/incomplete real-world data are still needed
-  before deployment — the recommended role is **decision support for a human
-  underwriter**, not a replacement for one.
-
+  
+**Project Scope:** This is a straightforward machine learning project designed to explore and benchmark various techniques and models. The primary goal is to study different ML workflows, preprocessing methods, and model evaluation strategies using a relatively simple dataset.
 
