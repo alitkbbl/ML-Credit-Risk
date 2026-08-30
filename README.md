@@ -66,7 +66,7 @@ flowchart LR
 
 ---
 
-## 📊 Key Results & Highlights
+## 📈 Key Results & Highlights
 
 Six models were tuned via 5-fold `GridSearchCV` (F1-scored) and evaluated on
 a held-out test set:
@@ -105,7 +105,7 @@ a held-out test set:
 
 ---
 
-## 🔑 Key Takeaways
+## 💡 Key Takeaways
 
 - **Best model:** XGBoost — 97.8% test accuracy, 0.982 F1, 0.990 precision.
 - **Primary risk driver:** `cibil_score`, overwhelmingly — a strength for
